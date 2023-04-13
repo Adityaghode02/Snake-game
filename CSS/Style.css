@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Source+Sans+3&display=swap');
+
+
+*{
+padding: 0;
+margin: 0;
+}
+
+.Container{
+
+    background: url("../Assets/Background.jpg");
+
+    min-height: 100vh;
+    background-size: 99.7vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+#Board{
+
+
+    background: linear-gradient(rgb(112, 224, 112) , rgb(161, 233, 161));
+    height: 90vmin;
+    width: 90vmin;
+    border: 2px  solid black;
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+
+
+.head{
+    background: linear-gradient(red , rgb(139, 4, 4));
+    
+    border: .64vmin solid black ;
+    border-radius: 12px;
+}
+
+.tail{
+    background-color: purple;
+    border: .40vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient( yellow, rgb(154, 187, 8));
+    border: .25vmin solid black;
+    border-radius: 24px;
+}
+
+
+#scoreBox{
+
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 39px;
+    font-family: 'Kalam', cursive;
+  }
+
+
+
+#hiBox{
+    position: absolute;
+    top: 70px;
+    right: 168px;
+    font-size: 39px;
+    font-family: 'Kalam', cursive;
+}
